@@ -3,19 +3,30 @@ project:
   output-dir: docs
   
 website:
-  title: "mrweatherallscience"
+  title: "Mr Weatherall Science"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - about.qmd
+      - physics.qmd
+      - digitaltech.qmd
+      - projects.qmd 
+      - blog.qmd
       
-
+  announcement: 
+    icon: info-circle
+    dismissable: true
+    content: "**Under Construction** - this is a new website - still working on it."
+    type: warning
+    position: below-navbar
+      
 format:
   html:
-    theme: cosmo
+    theme: sketchy
     css: styles.css
     toc: true
-
+    link-external-icon: true
+    link-external-newwindow: true
 
 
