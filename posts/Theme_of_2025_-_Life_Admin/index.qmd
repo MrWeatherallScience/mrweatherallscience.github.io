@@ -1,0 +1,17 @@
+---
+title: "Theme of 2025: Life Admin"
+author: "Alex Weatherall"
+description: "An introduction to my plans for 2025"
+date: "2024-12-28"
+categories:
+  - plans
+  - life
+draft: true
+
+ 
+---
+
+# Theme
+What is a theme?
+
+# Plans
