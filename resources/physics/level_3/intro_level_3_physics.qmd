@@ -1,0 +1,20 @@
+---
+title: Introduction to Level 3 Physics
+description: An overview of the course, its content and the lessons.
+author: Alex Weatherall
+date: 2024-12-29
+draft: true
+---
+
+# Welcome
+
+Welcome to Level 3 Physics at MVHS. I intend this course to be taught in person alongside the resources provided on this website.
+
+
+# Maths and Formulae
+
+![The scientific fields arranged by purity](https://www.explainxkcd.com/wiki/images/6/6c/purity.png)
+
+Physics uses Maths, there's no getting around that. For Level 3 physics you need to be comfortable with algebra, powers of 10, trigonomic functions, sin and cosine graphs, area and volume of geometric shapes, cartesian coordinates. There is no calculus in our course at level 2 or level 3 but you can study Calculus with the maths department at Level 3 - if you are considering studying Physics or Engineering at university this is important.  
+
+

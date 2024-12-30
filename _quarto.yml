@@ -1,6 +1,9 @@
 project:
   type: website
   output-dir: docs
+
+  
+
   
 website:
   title: "Mr Weatherall Science"
@@ -13,20 +16,30 @@ website:
       - digitaltech.qmd
       - projects.qmd 
       - blog.qmd
-      
+  body-footer: "2024-2025 Alex Weatherall - published with Quarto"
+  
+  open-graph: true
+
   announcement: 
     icon: info-circle
     dismissable: true
     content: "**Under Construction** - this is a new website - still working on it."
     type: warning
     position: below-navbar
-      
+  sidebar: 
+    contents: auto
+
+
 format:
   html:
-    theme: sketchy
+    theme: 
+      light: flatly
+      dark: darkly
     css: styles.css
     toc: true
+    toc-location: left
+    html-math-method: katex
     link-external-icon: true
     link-external-newwindow: true
-
+    page-layout: full
 

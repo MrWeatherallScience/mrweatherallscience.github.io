@@ -1,0 +1,17 @@
+---
+title:  $p=mv$
+description: The momentum formula explored
+author: Alex Weatherall
+date: 2024-12-29
+draft: true
+category: mechanics
+reference-location: margin
+citation-location: margin
+---
+
+Newton is using the word motion to mean the thing we now call _momentum_ - which describes a moving object. The momentum of the object depends on both the object's mass and the object's velocity or speed.
+
+The formula for momentum is $p = m v$.
+
+
+

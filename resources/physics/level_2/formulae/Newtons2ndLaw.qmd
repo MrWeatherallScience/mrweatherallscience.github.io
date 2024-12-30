@@ -1,0 +1,41 @@
+---
+title: $F=ma$
+description: Newton's second law formula explored
+author: Alex Weatherall
+date: 2024-12-29
+draft: true
+category: mechanics
+reference-location: margin
+citation-location: margin
+---
+
+Isaac Newton developed his three laws of motion as he worked on the Principia Mathematica published in 1687.
+
+He wrote in Latin, the language of scholars at the time, and expressed his second law like this:
+
+> _Mutationem motus proportionalem esse vi motrici impressæ, & fieri secundum lineam rectam qua vis illa imprimitur._
+
+::: {.column-margin}
+
+![Newton's laws of motion](https://upload.wikimedia.org/wikipedia/commons/5/5d/Newtons_laws_in_latin.jpg)
+
+You can find more information about the different versions of these here at [telescoper's blog](https://telescoper.blog/2019/11/13/newtons-laws-in-translation/) 
+
+:::
+
+which translates to:
+
+> The change of motion of an object is proportional to the force impressed; and is made in the direction of the straight line in which the force is impressed.
+
+He continues to explain: 
+> If a force generates a motion, a double force will generate double the motion, a triple force triple the motion, whether that force be impressed altogether and at once, or gradually and successively. And this motion (being always directed the same way with the generating force), if the body moved before, is added to or subtracted from the former motion, according as they directly conspire with or are directly contrary to each other; or obliquely joined, when they are oblique, so as to produce a new motion compounded from the determination of both.
+
+Newton is using the word motion to mean the thing we now call _momentum_ - which describes a moving object. The momentum of the object depends on both the object's mass and the object's velocity or speed.
+
+The formula for momentum is $p = m v$. You can read more about this [here](./momentum.html). 
+
+
+This can be simplified to force is proportional to mass $\times$ acceleration.
+$F = m a$
+
+

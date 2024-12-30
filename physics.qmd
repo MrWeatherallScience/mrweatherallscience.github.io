@@ -1,9 +1,7 @@
 ---
 title: "Physics"
+listing: 
+  contents: resources/physics
 ---
 
 ## Physics teaching resources for 2025
-
-### Introduction to Level 2 Physics
-
-### Introduction to Level 3 Physics
