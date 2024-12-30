@@ -1,10 +1,85 @@
 [
   {
+    "objectID": "resources/physics/level_2/formulae/Newtons2ndLaw.html",
+    "href": "resources/physics/level_2/formulae/Newtons2ndLaw.html",
+    "title": "1. F=ma",
+    "section": "",
+    "text": "When students first learn about Newton’s Second Law they tend to see it written as a formula F=ma or more fully:\n \\textup{Force} = \\textup{mass} \\times \\textup{acceleration}\nEach of these quantities, Force, mass and acceleration have units associated with them that describe what type of quantity they are and what the scale is for them.\n\n\n\nForce (F)\n\nis measured in newtons (N)\n\nmass (m)\n\nis measured in kilograms (kg)\n\nacceleration (a)\n\nis measured in metres per second (m s-1)\n\n\nLet’s unpack this formula so that we have got a good understanding of what is being described with these letters. There is a lot to unpack as this formula is actually formed from a few other relationships that fall out of Newton’s laws: acceleration, momentum, impulse.\nI probably won’t go into this amount of detail for all the formulae we cover, but this one is key, both for solving many problems and also for demonstrating some common ideas you need to be clear on when working with formula, how they link together and linking them to explanations of physics concepts.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Physics",
+      "Level 2",
+      "Formulae",
+      "1. $F=ma$"
+    ]
+  },
+  {
+    "objectID": "resources/physics/level_2/formulae/Newtons2ndLaw.html#introduction",
+    "href": "resources/physics/level_2/formulae/Newtons2ndLaw.html#introduction",
+    "title": "1. F=ma",
+    "section": "",
+    "text": "When students first learn about Newton’s Second Law they tend to see it written as a formula F=ma or more fully:\n \\textup{Force} = \\textup{mass} \\times \\textup{acceleration}\nEach of these quantities, Force, mass and acceleration have units associated with them that describe what type of quantity they are and what the scale is for them.\n\n\n\nForce (F)\n\nis measured in newtons (N)\n\nmass (m)\n\nis measured in kilograms (kg)\n\nacceleration (a)\n\nis measured in metres per second (m s-1)\n\n\nLet’s unpack this formula so that we have got a good understanding of what is being described with these letters. There is a lot to unpack as this formula is actually formed from a few other relationships that fall out of Newton’s laws: acceleration, momentum, impulse.\nI probably won’t go into this amount of detail for all the formulae we cover, but this one is key, both for solving many problems and also for demonstrating some common ideas you need to be clear on when working with formula, how they link together and linking them to explanations of physics concepts.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Physics",
+      "Level 2",
+      "Formulae",
+      "1. $F=ma$"
+    ]
+  },
+  {
+    "objectID": "resources/physics/level_2/formulae/Newtons2ndLaw.html#where-does-this-formula-come-from",
+    "href": "resources/physics/level_2/formulae/Newtons2ndLaw.html#where-does-this-formula-come-from",
+    "title": "1. F=ma",
+    "section": "Where does this formula come from?",
+    "text": "Where does this formula come from?\nAll the mathematical formulae we use in Physics have been developed from a Law or Theory1 (they mean pretty much the same thing) that a physicist (or more commonly a group of physicists - sometimes working independently) has developed. Sometimes the ideas are expressed directly in a mathematical form from theoretical work, in other cases, the formula develops from experimental data that shows a quantitative relationship, and sometimes a mixture of the two. Sometimes new mathematical ideas develop out of the need to explain physical laws, and occasionally, new discoveries in maths result in new physical theories.\n1 For an explanation on what scientists mean by a Law or Theory watch this Just a Theory Isaac Newton developed his three laws of motion as he worked on the Principia Mathematica published in 1687.\n\n\n\n\n\nNewton’s laws of motion\n\n\nYou can find more information about the different translations of Newton’s Laws here at telescoper’s blog\nHe wrote in Latin, the language of scholars at the time, and expressed his second law like this:\n\nMutationem motus proportionalem esse vi motrici impressæ, & fieri secundum lineam rectam qua vis illa imprimitur.\n\nwhich translates to:\n\nThe change of motion of an object is proportional to the force impressed; and is made in the direction of the straight line in which the force is impressed.\n\nHe continues to explain:\n\nIf a force generates a motion, a double force will generate double the motion, a triple force triple the motion, whether that force be impressed altogether and at once, or gradually and successively. And this motion (being always directed the same way with the generating force), if the body moved before, is added to or subtracted from the former motion, according as they directly conspire with or are directly contrary to each other; or obliquely joined, when they are oblique, so as to produce a new motion compounded from the determination of both.\n\n\nMomentum\nNewton is using the word “motion” to mean the thing we now call momentum - which is a physical property of a moving object. The momentum of the object depends on both the object’s mass and the object’s velocity or speed. The formula for momentum is p = m v. You can read more about the momentum formula here.\n\n\nChange\nNewton’s Second Law describes the “change of motion”” - we’ll call it a change in momentum. This implies that an object’s momentum can have different values over time, and Newton’s law says that those differences are caused by the force on the object. An obvious example of this is an object that isn’t moving (and so it’s momentum is zero), when this object is given a push, the object is in motion, so it now has a velocity or speed. This difference from a zero momentum, to the momentum the object has when it is moving is refered to as its change in momentum.\nIn mathematics when we describe change we can either be describing large changes (the difference between the start and end and we may get an imprecise or average result when we calculate this way), or use Calculus to account for very small changes and get a more accurate result. Both methods use the term delta to mean change (or difference in) and use the Greek letter delta to represent it - the capital letter delta is \\Delta and is used when we want to calculate with large changes, the lower letter delta is \\delta and is used when calculating the effects of lots of very small changes. In our classes we will be sticking to problems which consider large changes and relatively simple scenarios. More precise treatments or more complex scenarios require the use of Calculus (differentiation and integration) and we don’t cover these in Level 2 or Level 3 Physics, but you will be expected to do so when studying undergraduate Physics or Engineering courses. There is a Level 3 Maths course you can take\nTo represent the large scale change of any value (let’s refer to the value as X) mathematically, we refer to \\Delta X.\nThis is calculated like this \\Delta X = X_{after} - X_{before}2.\n2 You will also see quantities described with final and initial values; they mean similar things. I like after and before as they shorten to A and B, and then the calculation is always expressed in the correct order: X_A - X_B. If you use final and initial you have to remember to calculate it X_{final} - X_{initial}So if the value of X_{before} = 4 and the value of X_{after} = 16 then\n\\Delta X = X_{after} - X_{before} = 16 - 4 = 12.\n\n\nImpulse\nNewton also uses the term “force impressed”. When you apply a force, you do it for a certain length of time - a short push, or a prolonged push will have a different outcome. The modern term for this application of a force over a period of time is called the impulse. The formula for impulse (we use the letter J, because I is used for something else) is J = F \\times \\Delta t. Notice we’re refering to a period of time or the time taken so we’ve added the delta symbol; a period of time has a beginning and an end - so we want the difference between them to give us the time taken, rather than a particular time value (we’ll see this happens a lot with time). You can read more about the impulse formula here.\n\n\nDirection\nThe last thing Newton mentions in his Law, is to do with the direction. He states that the change in motion is in the same direction as the straight line of the force. This simple phrase indicates something fundamental that is key to nearly all phenomena in physics: some quantities have direction as well as magnitude. We refer to these as vectors3.\n3 In our formulae, I will usually give vector quantities an arrow \\vec{F} or type them in bold \\textbf{p}. I will try to do that every time, but sometimes I will forget. Let me know if I do; that way I know you’re paying attention.4 Here’s a link to a worksheet with some basic problems to practice.To practice and get used to these ideas you can use this worksheet.4",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Physics",
+      "Level 2",
+      "Formulae",
+      "1. $F=ma$"
+    ]
+  },
+  {
+    "objectID": "resources/physics/level_2/formulae/Newtons2ndLaw.html#developing-a-formula",
+    "href": "resources/physics/level_2/formulae/Newtons2ndLaw.html#developing-a-formula",
+    "title": "1. F=ma",
+    "section": "Developing a formula",
+    "text": "Developing a formula\nWith all this information we can now put together the formula we started with \\vec{F} = m \\times \\vec{a}.\nRemember: Newton’s 2nd law states that an impulse is proportional to a change in momentum along the same direction.\nHe also explains what proportional means: if the impulse is twice as big, the change in momentum will be twice as big also and so on.\nThere’s a symbol we use instead of equals to show a proportional relationship: \\varpropto.\nSo we can write out Newton’s statement out mathematically like this:\n\\textup{impulse} \\varpropto \\Delta \\textup{momentum}\nor written using symbols - including showing that both quantities are vectors (they have a line of direction):\n\\vec{J} \\varpropto \\Delta \\vec{p}\nNow, we want to end up with an equation so instead of \\varpropto we can multiply the momentum by a constant of proportionality - I’ll use k to represent this and I’ll tell you now, that because we’re using a specific set of units for each of our quantities, we’re going to be able to set k = 1.5\n5 If this feels like cheating, it’s not - it’s all down to our international system of units.So:\n\n\\begin{align*}\n\\vec{J} &= k \\times \\Delta \\vec{p} \\\\\n&= 1 \\times \\Delta \\vec{p} \\\\\n&= \\Delta \\vec{p}\n\\end{align*}\n\nremember \\vec{J} = \\vec{F} \\times \\Delta t and \\vec{p} = m \\vec{v}\nWell, now we can start to link all these quantities together by substitution. I’ll describe the steps first.\n\nWe’re going to replace impulse with the related quantities force and time.\nWe’re also going to express momentum in terms of mass and velocity.\nIf a change in momentum occurs, that could be because the mass changes or the velocity or both. Let’s state that the mass will remain constant (true for many cases). That means we can move our delta symbol to just act on the the velocity: \\Delta \\vec{p} = m \\times \\Delta \\vec{v}.\nLastly we note that having the time taken on the left hand side of our formula means we don’t have an equation that lets us calculate one value. In Physics, it’s sensible to start out with a formula that calculates one thing at a time. So lets divide through both sides of our equation by the time taken \\Delta t.\n\n\n\\begin{align*}\n\\vec{J} &= \\Delta \\vec{p} \\\\\n\\vec{F} \\times \\Delta t &= m \\times \\Delta \\vec{v} \\\\\n\\vec{F}  &= m \\times \\frac{\\Delta \\vec{v}}{\\Delta t} \\\\\n\\end{align*}\n\n\nAcceleration\nI’m going to briefly explain what is meant by acceleration - when we think about moving in a straight line, acceleration is speeding up and slowing down in a certain amount of time. You can change your speed in short amount of time or a longer amount of time - acceleration is how fast an object is changing velocity.\nIt has a formula: \\vec{a} = \\frac{\\Delta \\vec{v}}{\\Delta t}.\nHopefully, you can see that we can substitute the last part of our formula for \\vec{a}…",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Physics",
+      "Level 2",
+      "Formulae",
+      "1. $F=ma$"
+    ]
+  },
+  {
+    "objectID": "resources/physics/level_2/formulae/Newtons2ndLaw.html#what-it-all-means",
+    "href": "resources/physics/level_2/formulae/Newtons2ndLaw.html#what-it-all-means",
+    "title": "1. F=ma",
+    "section": "What it all means",
+    "text": "What it all means\nWe now have a formula built out of Newton’s Second Law. It’s the formula we opened this lesson with.\n\\vec{F} = m \\vec{a}\nIt tells us that an applied force is proportional to mass and also to acceleration and that we should use consistent units, such as the SI units, in order to do our calculations correctly.\nThis formula can be rearranged to tell us other things - that mass is proportional to force (we knew that) and that mass is inversely proportional to acceleration (if the mass doubles, then the acceleration for a given force will be half)\nm  = \\frac{\\vec{F}}{\\vec{a}}\nIt can also be rearranged to describe how the other quantities vary the acceleration. \\vec{a}  = \\frac{\\vec{F}}{m}\nHave a go at some problems using this formula. Almost all mathematical calculations you do in Level 2 Physics will be as easy as these questions - the complicated part comes from knowing what formulae to use and which ones relate to each other.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Physics",
+      "Level 2",
+      "Formulae",
+      "1. $F=ma$"
+    ]
+  },
+  {
     "objectID": "projects.html",
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "I was part of the team that founded Teacher Tapp, working with Laura McInerney, Becky Allen and the rest of the team until end of 2022.\n2024-2025 Alex Weatherall - published with Quarto",
+    "text": "I was part of the team that founded Teacher Tapp, working with Laura McInerney, Becky Allen and the rest of the team until end of 2022.",
     "crumbs": [
       "Home",
       "Projects"
@@ -55,33 +130,11 @@
     ]
   },
   {
-    "objectID": "physics.html",
-    "href": "physics.html",
-    "title": "Physics",
-    "section": "",
-    "text": "2024-2025 Alex Weatherall - published with Quarto",
-    "crumbs": [
-      "Home",
-      "Physics"
-    ]
-  },
-  {
-    "objectID": "digitaltech.html",
-    "href": "digitaltech.html",
-    "title": "Digital Technology",
-    "section": "",
-    "text": "2024-2025 Alex Weatherall - published with Quarto",
-    "crumbs": [
-      "Home",
-      "Digital Technology"
-    ]
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "I am a physics, science and digital technology teacher based in Timaru on Te Waipounamu - South Island New Zealand.\n\n\n\n2024-2025 Alex Weatherall - published with Quarto",
+    "text": "I am a physics, science and digital technology teacher based in Timaru on Te Waipounamu - South Island New Zealand.",
     "crumbs": [
       "Home",
       "About"
@@ -92,7 +145,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "No matching items\n\n2024-2025 Alex Weatherall - published with Quarto",
+    "text": "No matching items",
     "crumbs": [
       "Home",
       "Blog"
@@ -103,6 +156,6 @@
     "href": "index.html",
     "title": "Mr Weatherall Science",
     "section": "",
-    "text": "This is a new website.\n\n\n\n2024-2025 Alex Weatherall - published with Quarto"
+    "text": "This is a new website."
   }
 ]

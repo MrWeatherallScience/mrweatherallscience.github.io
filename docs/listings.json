@@ -1,7 +1,9 @@
 [
   {
     "listing": "/physics.html",
-    "items": []
+    "items": [
+      "/resources/physics/level_2/formulae/Newtons2ndLaw.html"
+    ]
   },
   {
     "listing": "/blog.html",

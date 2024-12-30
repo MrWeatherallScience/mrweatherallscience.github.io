@@ -1,5 +1,5 @@
 ---
-title: "Theme of 2025: __Organisation__"
+title: "Theme of 2025: *Organisation*"
 author: "Alex Weatherall"
 description: "An introduction to my plans for 2025"
 date: "2024-12-28"
@@ -17,7 +17,8 @@ What is a theme?
 # Plans
 
 - Life Admin
-  - Residencey
+  - Residency
+  - Cooking recipes
 - Organising Digital Media
 - Budgeting
 - Physical spaces

@@ -7,6 +7,7 @@ project:
   
 website:
   title: "Mr Weatherall Science"
+  page-navigation: true
   navbar:
     left:
       - href: index.qmd
@@ -16,7 +17,10 @@ website:
       - digitaltech.qmd
       - projects.qmd 
       - blog.qmd
-  body-footer: "2024-2025 Alex Weatherall - published with Quarto"
+  page-footer: 
+    left: "© 2025 Alex Weatherall - built with Quarto"
+    background: light
+    border: true
   
   open-graph: true
 
@@ -28,6 +32,9 @@ website:
     position: below-navbar
   sidebar: 
     contents: auto
+    style: "docked"
+    search: true
+  
 
 
 format:
@@ -37,9 +44,19 @@ format:
       dark: darkly
     css: styles.css
     toc: true
-    toc-location: left
+    toc-location:  right
+    bread-crumbs: false
     html-math-method: katex
     link-external-icon: true
     link-external-newwindow: true
     page-layout: full
+    anchor-sections: true
+    smooth-scroll: true
+    title-block-banner: true
+  #typst: 
+  #  papersize: a4
+  #  margin:
+  #    x: 1cm
+  #    y: 1cm
+  #  columns: 1
 
