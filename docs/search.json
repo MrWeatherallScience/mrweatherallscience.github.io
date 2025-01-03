@@ -1,16 +1,148 @@
 [
   {
-    "objectID": "resources/physics/level_3/intro_level_3_physics.html",
-    "href": "resources/physics/level_3/intro_level_3_physics.html",
-    "title": "Introduction to Level 3 Physics",
+    "objectID": "test.html",
+    "href": "test.html",
+    "title": "Plots Demo",
     "section": "",
-    "text": "Welcome\nWelcome to Level 3 Physics at MVHS. I intend this course to be taught in person alongside the resources provided on this website.\n\n\nMaths and Formulae\n\n\n\nThe scientific fields arranged by purity\n\n\nPhysics uses Maths, there’s no getting around that. For Level 3 physics you need to be comfortable with algebra, powers of 10, trigonomic functions, sin and cosine graphs, area and volume of geometric shapes, cartesian coordinates. There is no calculus in our course at level 2 or level 3 but you can study Calculus with the maths department at Level 3 - if you are considering studying Physics or Engineering at university this is important.\n\n\nTo be continued…",
+    "text": "See Figure 1 for an example.\n\n\n┌ Warning: Found `resolution` in the theme when creating a `Scene`. The `resolution` keyword for `Scene`s and `Figure`s has been deprecated. Use `Figure(; size = ...` or `Scene(; size = ...)` instead, which better reflects that this is a unitless size and not a pixel resolution. The key could also come from `set_theme!` calls or related theming functions.\n└ @ Makie C:\\Users\\alexw\\.julia\\packages\\Makie\\Y3ABD\\src\\scenes.jl:238\n\n\n\n\n\n\n\n\nFigure 1: Electric Field Lines",
+    "crumbs": [
+      "Home",
+      "Plots Demo"
+    ]
+  },
+  {
+    "objectID": "test.html#electric-plots",
+    "href": "test.html#electric-plots",
+    "title": "Plots Demo",
+    "section": "",
+    "text": "See Figure 1 for an example.\n\n\n┌ Warning: Found `resolution` in the theme when creating a `Scene`. The `resolution` keyword for `Scene`s and `Figure`s has been deprecated. Use `Figure(; size = ...` or `Scene(; size = ...)` instead, which better reflects that this is a unitless size and not a pixel resolution. The key could also come from `set_theme!` calls or related theming functions.\n└ @ Makie C:\\Users\\alexw\\.julia\\packages\\Makie\\Y3ABD\\src\\scenes.jl:238\n\n\n\n\n\n\n\n\nFigure 1: Electric Field Lines",
+    "crumbs": [
+      "Home",
+      "Plots Demo"
+    ]
+  },
+  {
+    "objectID": "test.html#some-ojs",
+    "href": "test.html#some-ojs",
+    "title": "Plots Demo",
+    "section": "Some OJS",
+    "text": "Some OJS\n\nHistogram\nSee Figure 2 for an example.\n\n\nCode\nnumbers = Float64Array.from({length: 1000}, d3.randomNormal())\nheight = 250\nimport {chart as histogram} with {numbers as data, height} from \"@d3/histogram@261\"\nhistogram\n\n\n\n\n\n\n\n\n\n\n\n\n\n(a)\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\nFigure 2: A normal distribution of random numbers\n\n\n\n\n\n\nH-R Diagram\nSee Figure 3 for more advanced example\nAn HR diagram plots the relationship between stars’ absolute magnitudes (brighter going up) and temperatures (warmer going left). For the large set of stars below, it effectively shows how stars age over time. Data: Hipparcos, Gliese\n\n\nCode\nchart = {\n\n  // Declare the chart dimensions and margins.\n  const width = 928;\n  const height = Math.round(width * 1.2)\n  const marginTop = 40;\n  const marginRight = 40;\n  const marginBottom = 40;\n  const marginLeft = 40;\n\n  // Ceate the scales.\n  const x = d3.scaleLinear([-0.39, 2.19], [marginLeft, width - marginRight]);\n  const y = d3.scaleLinear([-7, 19], [marginTop, height - marginBottom]);\n  const z = bv2rgb;\n\n  // Create the SVG container.\n  const svg = d3.create(\"svg\")\n      .attr(\"width\", width + 28)\n      .attr(\"height\", height)\n      .attr(\"viewBox\", [-14, 0, width + 28, height])\n      .attr(\"style\", \"max-width: calc(100% + 28px); height: auto;\")\n      .style(\"margin\", \"0 -14px\")\n      .style(\"background\", \"#000\")\n      .style(\"color\", \"#fff\")\n      .style(\"display\", \"block\")\n      .attr(\"fill\", \"currentColor\")\n      .attr(\"font-family\", \"sans-serif\")\n      .attr(\"font-size\", 10);\n\n  // Create a small (sub pixel) rectangle for each star.\n  svg.append(\"g\")\n    .selectAll(\"rect\")\n    .data(data)\n    .join(\"rect\")\n      .attr(\"x\", d =&gt; x(d.color))\n      .attr(\"y\", d =&gt; y(d.absolute_magnitude))\n      .attr(\"fill\", d =&gt; z(d.color))\n      .attr(\"width\", 0.75)\n      .attr(\"height\", 0.75);\n\n  // Create the axes.\n  svg.append(\"g\")\n      .attr(\"transform\", `translate(${marginLeft},0)`)\n      .call(d3.axisLeft(d3.scaleLog(y.domain().map(m =&gt; Math.pow(10, 4.83 - m)), y.range())));\n\n  svg.append(\"g\")\n      .attr(\"transform\", `translate(${width - marginRight},0)`)\n      .call(d3.axisRight(y).ticks(null, \"+\"));\n\n  svg.append(\"g\")\n      .attr(\"transform\", `translate(0,${height - marginBottom})`)\n      .call(d3.axisBottom(x).ticks(null, \"+f\"));\n\n  svg.append(\"g\")\n      .attr(\"transform\", `translate(0,${marginTop})`)\n      .call(((temperatures) =&gt; d3.axisTop(x)\n          .tickValues(temperatures.map(color))\n          .tickFormat((_, i) =&gt; temperatures[i].toLocaleString(\"en\")))\n        (d3.range(3000, 10001, 1000).concat(20000)));\n\n  svg.selectAll(\".domain\").remove();\n\n  svg.append(\"text\")\n      .attr(\"dy\", 12)\n      .attr(\"text-anchor\", \"middle\")\n      .attr(\"transform\", `translate(${marginLeft},${(marginTop + height - marginBottom) / 2}) rotate(-90)`)\n      .call(text =&gt; text.append(\"tspan\").attr(\"fill-opacity\", 0.8).text(\"← darker\\xa0\"))\n      .call(text =&gt; text.append(\"tspan\").attr(\"font-weight\", \"bold\").text(\"\\xa0Luminosity L☉\\xa0\"))\n      .call(text =&gt; text.append(\"tspan\").attr(\"fill-opacity\", 0.8).text(\"\\xa0brighter →\"));\n\n  svg.append(\"text\")\n      .attr(\"dy\", -6)\n      .attr(\"text-anchor\", \"middle\")\n      .attr(\"transform\", `translate(${width - marginRight},${(marginTop + height - marginBottom) / 2}) rotate(-90)`)\n      .call(text =&gt; text.append(\"tspan\").attr(\"fill-opacity\", 0.8).text(\"← darker\\xa0\"))\n      .call(text =&gt; text.append(\"tspan\").attr(\"font-weight\", \"bold\").text(\"\\xa0Absolute magnitude M\\xa0\"))\n      .call(text =&gt; text.append(\"tspan\").attr(\"fill-opacity\", 0.8).text(\"\\xa0brighter →\"));\n\n  svg.append(\"text\")\n      .attr(\"x\", (marginLeft + width - marginRight) / 2)\n      .attr(\"y\", marginTop)\n      .attr(\"dy\", 12)\n      .attr(\"text-anchor\", \"middle\")\n      .call(text =&gt; text.append(\"tspan\").attr(\"fill-opacity\", 0.8).text(\"← hotter\\xa0\"))\n      .call(text =&gt; text.append(\"tspan\").attr(\"font-weight\", \"bold\").text(\"\\xa0Temperature K\\xa0\"))\n      .call(text =&gt; text.append(\"tspan\").attr(\"fill-opacity\", 0.8).text(\"\\xa0colder →\"));\n\n  svg.append(\"text\")\n      .attr(\"x\", (marginLeft + width - marginRight) / 2)\n      .attr(\"y\", height - marginBottom)\n      .attr(\"dy\", -6)\n      .attr(\"text-anchor\", \"middle\")\n      .call(text =&gt; text.append(\"tspan\").attr(\"fill-opacity\", 0.8).text(\"← blue\\xa0\"))\n      .call(text =&gt; text.append(\"tspan\").attr(\"font-weight\", \"bold\").text(\"\\xa0Color B-V\\xa0\"))\n      .call(text =&gt; text.append(\"tspan\").attr(\"fill-opacity\", 0.8).text(\"\\xa0red →\"));\n\n  return svg.node();\n}\n\nfunction bv2rgb(bv) {\n  bv = Math.max(-0.4, Math.min(2, bv));\n  let t;\n  return `#${[\n    bv &lt; 0 ? (t = (bv + 0.4) / 0.4, 0.61 + (0.11 * t) + (0.1 * t * t))\n      : bv &lt; 0.4 ? (t = bv / 0.4, 0.83 + (0.17 * t))\n      : 1,\n    bv &lt; 0 ? (t = (bv + 0.4) / 0.4, 0.70 + (0.07 * t) + (0.1 * t * t))\n      : bv &lt; 0.4 ? (t = bv / 0.4, 0.87 + (0.11 * t))\n      : bv &lt; 1.6 ? (t = (bv - 0.4) / 1.20, 0.98 - (0.16 * t))\n      : (t = (bv - 1.6) / 0.4, 0.82 - (0.5 * t * t)), \n    bv &lt; 0.4 ? 1\n      : bv &lt; 1.5 ? (t = (bv - 0.4) / 1.1, 1 - (0.47 * t) + (0.1 * t * t))\n      : bv &lt; 1.94 ? (t = (bv - 1.5) / 0.44, 0.63 - (0.6 * t * t))\n      : 0\n  ].map(t =&gt; Math.round(t * 255).toString(16).padStart(2, \"0\")).join(\"\")}`;\n}\n\nfunction temperature(color) {\n  return 4600 * (1 / (0.92 * color + 1.7) + 1 / (0.92 * color + 0.62));\n}\n\nfunction color(temperature) {\n  const u = 8464 / temperature;\n  return (u - 2.1344 + Math.hypot(0.9936, u)) / 1.6928;\n}\n\ndata = [{absolute_magnitude: 5.9972302965488815, color: 0.999}\n  ,{absolute_magnitude: 5.867218690714374, color: 0.74}\n  ,{absolute_magnitude: 3.8725422831266023, color: 0.489}\n  ,{absolute_magnitude: -0.2952781368990891, color: 0.955}\n  ,{absolute_magnitude: 3.6955017489646824, color: 0.516}\n  ,{absolute_magnitude: 2.983017179817981, color: 0.456}\n  ,{absolute_magnitude: 2.927544375368859, color: 0.466}\n  ,{absolute_magnitude: 2.1821239918240387, color: 0.514}\n  ,{absolute_magnitude: 5.653637361046087, color: 0.778}\n  ,{absolute_magnitude: 2.736028469766552, color: 0.475}\n  , {absolute_magnitude: 0.6740802995803534, color: 1.032}\n  , {absolute_magnitude: 7.790972791954928, color: 1.15}\n  , {absolute_magnitude: 7.193646670438401, color: 1.03}\n  , {absolute_magnitude: 6.03172724660611, color: 0.863}\n  , {absolute_magnitude: 4.218072092754523, color: 0.52}\n  , {absolute_magnitude: -0.022041838524758717, color: -0.047}\n  , {absolute_magnitude: 6.434954552631687, color: 0.94}\n  , {absolute_magnitude: 4.388111310295262, color: 0.671}\n  , {absolute_magnitude: 4.205730486920487, color: 0.566}\n  , {absolute_magnitude: 5.502280497869052, color: 0.642}]\n\n\n\n\n\n\n\n\n\n\n\n\n\n(a)\n\n\n\n\n\n\n\n\n\n\n\n\n\n(b)\n\n\n\n\n\n\n\n\n\n\n\n\n\n(c)\n\n\n\n\n\n\n\n\n\n\n\n\n\n(d)\n\n\n\n\n\n\n\n\n\n\n\n\n\n(e)\n\n\n\n\n\n\nFigure 3: The Herzsprung-Russell Diagram",
+    "crumbs": [
+      "Home",
+      "Plots Demo"
+    ]
+  },
+  {
+    "objectID": "resources/physics/level_2/intro_level_2_physics.html",
+    "href": "resources/physics/level_2/intro_level_2_physics.html",
+    "title": "Introduction to Level 2 Physics",
+    "section": "",
+    "text": "Welcome\nWelcome to Level 2 Physics at MVHS. I intend this course to be taught in person alongside the resources provided on this website.\n\n\nMaths and Formulae\n\n\n\nThe scientific fields arranged by purity\n\n\nPhysics uses Maths, there’s no getting around that. For Level 2 physics you need to be comfortable with algebra, powers of 10, trigonomic functions, sin and cosine graphs, area and volume of geometric shapes, cartesian coordinates. There is no calculus in our course at level 2 or level 3 but you can study Calculus in the maths department at Level 3 - if you are considering studying Physics or Engineering at university this is important.\n\n\nTo be continued…",
     "crumbs": [
       "Home",
       "Resources",
       "Physics",
-      "Level 3",
-      "Introduction to Level 3 Physics"
+      "Level 2",
+      "Introduction to Level 2 Physics"
+    ]
+  },
+  {
+    "objectID": "resources/physics/level_2/formulae/momentum.html",
+    "href": "resources/physics/level_2/formulae/momentum.html",
+    "title": "p=mv",
+    "section": "",
+    "text": "Newton is using the word motion to mean the thing we now call momentum - which describes a moving object. The momentum of the object depends on both the object’s mass and the object’s velocity or speed.\nThe formula for momentum is p = m v.",
+    "crumbs": [
+      "Home",
+      "Resources",
+      "Physics",
+      "Level 2",
+      "Formulae",
+      "$p=mv$"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Mr Weatherall Science",
+    "section": "",
+    "text": "This is a new website."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "No matching items",
+    "crumbs": [
+      "Home",
+      "Blog"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am a physics, science and digital technology teacher based in Timaru on Te Waipounamu - South Island New Zealand.",
+    "crumbs": [
+      "Home",
+      "About"
+    ]
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "I was part of the team that founded Teacher Tapp, working with Laura McInerney, Becky Allen and the rest of the team until end of 2022.",
+    "crumbs": [
+      "Home",
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects.html#teacher-tapp",
+    "href": "projects.html#teacher-tapp",
+    "title": "Projects",
+    "section": "",
+    "text": "I was part of the team that founded Teacher Tapp, working with Laura McInerney, Becky Allen and the rest of the team until end of 2022.",
+    "crumbs": [
+      "Home",
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects.html#teach-my-concept",
+    "href": "projects.html#teach-my-concept",
+    "title": "Projects",
+    "section": "Teach My Concept",
+    "text": "Teach My Concept\nTeach My Concept",
+    "crumbs": [
+      "Home",
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects.html#teaching-science-in-all-weather",
+    "href": "projects.html#teaching-science-in-all-weather",
+    "title": "Projects",
+    "section": "Teaching Science In All Weather",
+    "text": "Teaching Science In All Weather\nMy old old site TeachingScienceInAllWeather",
+    "crumbs": [
+      "Home",
+      "Projects"
+    ]
+  },
+  {
+    "objectID": "projects.html#science-teaching-library",
+    "href": "projects.html#science-teaching-library",
+    "title": "Projects",
+    "section": "Science Teaching Library",
+    "text": "Science Teaching Library\nScienceTeachingLibrary",
+    "crumbs": [
+      "Home",
+      "Projects"
     ]
   },
   {
@@ -89,101 +221,17 @@
     ]
   },
   {
-    "objectID": "projects.html",
-    "href": "projects.html",
-    "title": "Projects",
+    "objectID": "resources/physics/level_3/intro_level_3_physics.html",
+    "href": "resources/physics/level_3/intro_level_3_physics.html",
+    "title": "Introduction to Level 3 Physics",
     "section": "",
-    "text": "I was part of the team that founded Teacher Tapp, working with Laura McInerney, Becky Allen and the rest of the team until end of 2022.",
-    "crumbs": [
-      "Home",
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects.html#teacher-tapp",
-    "href": "projects.html#teacher-tapp",
-    "title": "Projects",
-    "section": "",
-    "text": "I was part of the team that founded Teacher Tapp, working with Laura McInerney, Becky Allen and the rest of the team until end of 2022.",
-    "crumbs": [
-      "Home",
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects.html#teach-my-concept",
-    "href": "projects.html#teach-my-concept",
-    "title": "Projects",
-    "section": "Teach My Concept",
-    "text": "Teach My Concept\nTeach My Concept",
-    "crumbs": [
-      "Home",
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects.html#teaching-science-in-all-weather",
-    "href": "projects.html#teaching-science-in-all-weather",
-    "title": "Projects",
-    "section": "Teaching Science In All Weather",
-    "text": "Teaching Science In All Weather\nMy old old site TeachingScienceInAllWeather",
-    "crumbs": [
-      "Home",
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "projects.html#science-teaching-library",
-    "href": "projects.html#science-teaching-library",
-    "title": "Projects",
-    "section": "Science Teaching Library",
-    "text": "Science Teaching Library\nScienceTeachingLibrary",
-    "crumbs": [
-      "Home",
-      "Projects"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "I am a physics, science and digital technology teacher based in Timaru on Te Waipounamu - South Island New Zealand.",
-    "crumbs": [
-      "Home",
-      "About"
-    ]
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "No matching items",
-    "crumbs": [
-      "Home",
-      "Blog"
-    ]
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Mr Weatherall Science",
-    "section": "",
-    "text": "This is a new website."
-  },
-  {
-    "objectID": "resources/physics/level_2/intro_level_2_physics.html",
-    "href": "resources/physics/level_2/intro_level_2_physics.html",
-    "title": "Introduction to Level 2 Physics",
-    "section": "",
-    "text": "Welcome\nWelcome to Level 2 Physics at MVHS. I intend this course to be taught in person alongside the resources provided on this website.\n\n\nMaths and Formulae\n\n\n\nThe scientific fields arranged by purity\n\n\nPhysics uses Maths, there’s no getting around that. For Level 2 physics you need to be comfortable with algebra, powers of 10, trigonomic functions, sin and cosine graphs, area and volume of geometric shapes, cartesian coordinates. There is no calculus in our course at level 2 or level 3 but you can study Calculus in the maths department at Level 3 - if you are considering studying Physics or Engineering at university this is important.\n\n\nTo be continued…",
+    "text": "Welcome\nWelcome to Level 3 Physics at MVHS. I intend this course to be taught in person alongside the resources provided on this website.\n\n\nMaths and Formulae\n\n\n\nThe scientific fields arranged by purity\n\n\nPhysics uses Maths, there’s no getting around that. For Level 3 physics you need to be comfortable with algebra, powers of 10, trigonomic functions, sin and cosine graphs, area and volume of geometric shapes, cartesian coordinates. There is no calculus in our course at level 2 or level 3 but you can study Calculus with the maths department at Level 3 - if you are considering studying Physics or Engineering at university this is important.\n\n\nTo be continued…",
     "crumbs": [
       "Home",
       "Resources",
       "Physics",
-      "Level 2",
-      "Introduction to Level 2 Physics"
+      "Level 3",
+      "Introduction to Level 3 Physics"
     ]
   }
 ]

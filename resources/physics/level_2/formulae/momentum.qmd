@@ -3,7 +3,6 @@ title:  $p=mv$
 description: The momentum formula explored
 author: Alex Weatherall
 date: 2024-12-29
-draft: true
 category: mechanics
 reference-location: margin
 citation-location: margin
