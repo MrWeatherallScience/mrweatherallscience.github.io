@@ -81,8 +81,9 @@ histogram
 
 See @fig-hrdiag for more advanced example
 
+An **HR diagram** plots the relationship between stars’ absolute magnitudes (brighter going up) and temperatures (warmer going left).
+Source [Mike Bostok](https://observablehq.com/@d3/hertzsprung-russell-diagram)
 
-An **HR diagram** plots the relationship between stars’ absolute magnitudes (brighter going up) and temperatures (warmer going left). For the large set of stars below, it effectively shows how stars age over time. Data: Hipparcos, Gliese
 
 ```{ojs}
 //| label: fig-hrdiag
